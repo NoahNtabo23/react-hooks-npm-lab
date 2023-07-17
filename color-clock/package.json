@@ -5,8 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo 'Hello World!'",
-    "start": "serve"
+    "start": "serve",
+    "build": "esbuild index.js --bundle --outfile=dist/out.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "date-fn": "^0.0.2",
+    "date-fns": "^2.30.0",
+    "esbuild": "^0.18.13"
+  }
 }
